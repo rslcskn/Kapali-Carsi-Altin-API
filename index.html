@@ -13,6 +13,16 @@
             padding: 0;
         }
 
+        /* Topbar styling */
+        .topbar {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
         .container {
             width: 90%;
             max-width: 1200px;
@@ -78,7 +88,7 @@
             border-radius: 12px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            margin-bottom: 20px; /* Adds space below result */
+            margin-bottom: 20px;
             text-align: center;
             font-size: 18px;
         }
@@ -233,6 +243,13 @@
 
 <body>
 
+    <!-- Topbar -->
+    <div class="topbar">
+        Burada yer alan haberler, döviz kurları ve altın fiyatları bilgi amaçlıdır. Yayınlanan bilgiler yatırım
+        danışmanlığı kapsamında değildir. Bu nedenle, yalnızca burada yer alan bilgilere dayanılarak yatırım kararı verilmesi
+        beklentilerinize uygun sonuçlar doğurmayabilir.
+    </div>
+
     <div class="container">
         <h1>Anlık Canlı Altın Fiyatları, Gram Altın, Çeyrek Altın Fiyatları</h1>
         <p class="subheader">Canlı altın fiyatları ve güncel altın piyasası verileri! Gram, çeyrek, yarım ve tam altın fiyatları ile altının ons fiyatı bugün ne kadar?</p>
@@ -283,11 +300,12 @@
             </div>
 
             <div class="sidebar">
-                <h3>1000 TL ile Ne Alınır?</h3>
+                <h3>Bugün 1.000 TL Ne Kadar Oldu?</h3>
                 <table class="small-price-table" id="thousandTLTable">
                     <thead>
                         <tr>
-                            
+                            <th>Altın Birimi</th>
+                            <th>Kaç Birim Alınır?</th>
                         </tr>
                     </thead>
                     <tbody>
