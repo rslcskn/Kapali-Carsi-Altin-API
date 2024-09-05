@@ -1,4 +1,5 @@
-# Kapalı Çarşı Altın Fiyatları API / 
+
+# Kapalı Çarşı Altın Fiyatları API
 
 ## Türkçe
 
@@ -11,10 +12,12 @@
 
 #### Örnek GET İsteği:
 
-```http
+```bash
 GET https://kapalicarsi.apiluna.org/
 ```
+
 #### Örnek API Yanıtı:
+
 ```json
 [
   {
@@ -37,43 +40,49 @@ GET https://kapalicarsi.apiluna.org/
   }
 ]
 ```
-#### API Yanıt Açıklaması:
-**code:** Altın türü veya döviz kodu (örn: "ALTIN", "CEYREK_YENI").
 
-**alis:** Alış fiyatı.
+### API Yanıt Açıklaması:
 
-**satis:** Satış fiyatı.
+- **code**: Altın türü veya döviz kodu (örn: "ALTIN", "CEYREK_YENI").
+- **alis**: Alış fiyatı.
+- **satis**: Satış fiyatı.
+- **dusuk**: Gün içi en düşük fiyat.
+- **yuksek**: Gün içi en yüksek fiyat.
+- **kapanis**: Kapanış fiyatı.
+- **tarih**: Fiyat verisinin güncellenme tarihi ve saati.
 
-**dusuk:** Gün içi en düşük fiyat.
+### API Özellikleri
 
-**yuksek:** Gün içi en yüksek fiyat.
+- **JSON Formatı**: Tüm yanıtlar JSON formatındadır.
+- **Gerçek Zamanlı Güncellemeler**: Veriler her dakika güncellenir.
+- **Çeşitli Varlıklar**: Altın, döviz, değerli metaller ve diğer piyasa verileri yer alır.
 
-**kapanis:** Kapanış fiyatı.
+### API Sınırları ve Kısıtlamalar
 
-**tarih:** Fiyat verisinin güncellenme tarihi ve saati.
+- **Saniye Başına İstek (RPS)**: API'ye her saniye en fazla 1 istek yapılmalıdır.
+- **Kapsam**: Bu API yalnızca bilgi amaçlıdır ve yatırım tavsiyesi değildir. Yatırım kararlarınızı verirken profesyonel destek almanız önerilir.
 
-#### API Özellikleri
-- **JSON Formatı:** Tüm yanıtlar JSON formatındadır.
+---
 
-- **Gerçek Zamanlı Güncellemeler:** Veriler her dakika güncellenir.
-
-- **Çeşitli Varlıklar:** Altın, döviz, değerli metaller ve diğer piyasa verileri yer alır.
-#### API Sınırları ve Kısıtlamalar
-- **Saniye Başına İstek (RPS):** API'ye her saniye en fazla 1 istek yapılmalıdır.
-
-- **Kapsam:** Bu API yalnızca bilgi amaçlıdır ve yatırım tavsiyesi değildir. Yatırım kararlarınızı verirken profesyonel destek almanız önerilir.
 ## English
-Kapalı Çarşı Gold Prices API provides real-time gold prices, exchange rates, and metal buy/sell rates in JSON format.
 
-#API Usage
+**Kapalı Çarşı Gold Prices API** provides real-time gold prices, exchange rates, and metal buy/sell rates in JSON format.
+
+### API Usage
+
 - **Base URL**: `https://kapalicarsi.apiluna.org`
 - You can use this API to retrieve live gold prices, exchange rates, and other market data.
+
 #### Example GET Request:
-```http
+
+```bash
 GET https://kapalicarsi.apiluna.org/
 ```
+
 #### Example API Response:
-```[
+
+```json
+[
   {
     "code": "ALTIN",
     "alis": "2794.380",
@@ -94,25 +103,24 @@ GET https://kapalicarsi.apiluna.org/
   }
 ]
 ```
-#### API Response Explanation:
-**code:** Type of gold or exchange code (e.g., "ALTIN", "CEYREK_YENI").
 
-**alis:** Buy price.
+### API Response Explanation:
 
-**satis:** Sell price.
+- **code**: Type of gold or exchange code (e.g., "ALTIN", "CEYREK_YENI").
+- **alis**: Buy price.
+- **satis**: Sell price.
+- **dusuk**: Lowest price of the day.
+- **yuksek**: Highest price of the day.
+- **kapanis**: Closing price.
+- **tarih**: Date and time of the price update.
 
-**dusuk:** Lowest price of the day.
+### API Features
 
-**yuksek:** Highest price of the day.
+- **JSON Format**: All responses are in JSON format.
+- **Real-Time Updates**: Data is updated every minute.
+- **Various Assets**: Provides prices for gold, exchange rates, precious metals, and more.
 
-**kapanis:** Closing price.
+### API Limits and Restrictions
 
-**tarih:** Date and time of the price update.
-#### API Features
-- **JSON Format:** All responses are in JSON format.
-
-- **Real-Time Updates:** Data is updated every minute.
-- **Various Assets:** Provides prices for gold, exchange rates, precious metals, and more.
-#### API Limits and Restrictions
-- **Requests per Second (RPS):** Limit requests to 1 request per second.
-- **Scope:** This API is for informational purposes only and does not provide investment advice. It is recommended to consult with professionals when making investment decisions.
+- **Requests per Second (RPS)**: Limit requests to 1 request per second.
+- **Scope**: This API is for informational purposes only and does not provide investment advice. It is recommended to consult with professionals when making investment decisions.
