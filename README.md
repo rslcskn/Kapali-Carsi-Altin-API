@@ -5,6 +5,8 @@
 
 **Kapalı Çarşı Altın Fiyatları API**, güncel altın fiyatları, döviz kurları ve çeşitli metallerin alış/satış fiyatlarını JSON formatında sunan bir API'dir.
 
+🔗 Canlı Demo (https://kapali-carsi-altin-api.vercel.app
+
 ### API Kullanımı
 
 - **Base URL**: `https://kapalicarsi.apiluna.org`
