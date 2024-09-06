@@ -56,7 +56,7 @@ GET https://kapalicarsi.apiluna.org/
 ### API Özellikleri
 
 - **JSON Formatı**: Tüm yanıtlar JSON formatındadır.
-- **Gerçek Zamanlı Güncellemeler**: Veriler her dakika güncellenir.
+- **Gerçek Zamanlı Güncellemeler**: Veriler anlık güncellenir.
 - **Çeşitli Varlıklar**: Altın, döviz, değerli metaller ve diğer piyasa verileri yer alır.
 
 ### API Sınırları ve Kısıtlamalar
@@ -121,7 +121,7 @@ GET https://kapalicarsi.apiluna.org/
 ### API Features
 
 - **JSON Format**: All responses are in JSON format.
-- **Real-Time Updates**: Data is updated every minute.
+- **Real-Time Updates**: Data is updated live.
 - **Various Assets**: Provides prices for gold, exchange rates, precious metals, and more.
 
 ### API Limits and Restrictions
